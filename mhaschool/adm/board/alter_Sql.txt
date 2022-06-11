@@ -1,0 +1,2 @@
+
+alter table TB_BOARD_BB010 add BB_ATTACH_FILE varchar(100) null;

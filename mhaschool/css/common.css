@@ -1,0 +1,172 @@
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/NanumGothic-Regular.eot');
+  src: url('../fonts/NanumGothic-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic-Regular.woff2') format('woff2'),
+       url('../fonts/NanumGothic-Regular.woff') format('woff'),
+       url('../fonts/NanumGothic-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/NanumGothic-Bold.eot');
+  src: url('../fonts/NanumGothic-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic-Bold.woff2') format('woff2'),
+       url('../fonts/NanumGothic-Bold.woff') format('woff'),
+       url('../fonts/NanumGothic-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../fonts/NanumGothic-ExtraBold.eot');
+  src: url('../fonts/NanumGothic-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/NanumGothic-ExtraBold.woff2') format('woff2'),
+       url('../fonts/NanumGothic-ExtraBold.woff') format('woff'),
+       url('../fonts/NanumGothic-ExtraBold.ttf') format('truetype');
+}
+
+/*reset css*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; color: #333; font-family: 'Nanum Gothic', serif; } 
+body { line-height: 1; } 
+ol, ul { list-style: none; } 
+blockquote, q { quotes: none; } 
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } 
+table { border-collapse: collapse; border-spacing: 0; } 
+a { text-decoration: none; color: #333; outline: none } 
+a:hover, a:active, a:focus { text-decoration: none; color: #333; } 
+/* // reset css*/
+
+/*공통 css*/
+.pc { display: block !important; } 
+.mb { display: none !important; } 
+.frame { width: 1200px; margin: 0 auto; overflow: hidden; padding: 0px 50px; } 
+
+/*header css*/
+/*탑헤더 상단메뉴*/
+.top_header div { float: left; } 
+.top_nav { float: right; } 
+.top_nav li { display: inline-block; padding: 40px 10px 20px; } 
+.top_nav li a{font-weight: bold;}
+.pc_logo{margin: 10px 0px;}
+
+/*메인 메뉴*/
+.navbar-inverse .navbar-nav>li {padding: 0px 22px; }
+.navbar-inverse .navbar-nav>li>a { font-size: 20px; color: #333; font-weight: bold; padding: 10px 0px; }
+.navbar-inverse { background: #fff; border: none; } 
+.navbar { width: 1160px; margin: 13px auto; } 
+.navbar-inverse .container-fluid{padding: 0;}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {background-color: #ffffff; color: #444 }
+.navbar-inverse .navbar-nav>li a,.navbar-inverse .navbar-nav>li a:focus, .navbar-inverse .navbar-nav>li a:hover{color:#1a222d;}
+
+.navbar-inverse .navbar-nav>li:hover a {border-bottom: 5px solid #444;color:#1a222d;}
+
+#myNavbar .dropdown-menu{border-radius: 4px;}
+#myNavbar .dropdown-menu li a{font-size: 14px; padding: 10px;}
+#myNavbar .dropdown-menu li a{border: none;}
+
+/*footer css 푸터*/
+footer{background: #474748;}
+.footer_info{color: #eee; line-height: 20px;font-size: 13px;padding: 2px 0px 19px;}
+.footer_info span{color:#eee;display: block;}
+.footer_box{float: left; margin: 20px 20px 0px;}
+
+/*미디어 쿼리 시작 @media (max-width: 600px) { */
+@media all and (min-width: 320px) and (max-width:770px) {
+	/*공통 css*/	
+	.mb { display: block !important; } 
+	.pc { display: none !important; }	
+	.frame{width: initial; padding: 0px 20px;}
+
+	/*모바일 탑상단 메뉴*/
+	.mb_logo{text-align: center;max-width: 192px; margin: 0 auto;  min-width: 192px; }
+	.mb_logo img{width: 100%;}
+	.mb_top_nav{ text-align: center; background: #eee;}   
+	.mb_top_nav li{display: inline; line-height: 37px; text-align: center;  padding: 0px 18px; font-weight: bold;  border-right: 2px solid #727272;}
+	.mb_top_nav li:last-child{margin-right: 0px; border-right: 0px;}
+	.mb_top_nav li a{border:none !important; color: #333 !important;}
+	.mb_top_nav li a, .mb_top_nav li a i{color: #333;}
+
+	/*모바일 메인 메뉴*/
+	.navbar { width: initial; margin: 0 auto; } 
+	.navbar-inverse { background: #1a222d; border: none; } 
+	.navbar-inverse .navbar-toggle { border: none; } 
+	#myNavbar ul li a.dropdown-toggle { color: #ececec; border-bottom: 1px solid #000; text-align: center; }
+
+	#myNavbar ul li:last-child a.dropdown-toggle { border-bottom: none; } /*Last 상위 메뉴의 라인 제건*/
+	#myNavbar .dropdown-menu { background: #eee } /*최하위 메뉴 배경색 Open시 */
+	#myNavbar .dropdown-menu li a {color: #333; font-size: 13px; text-align: center; } /*최하위 메뉴 Open시*/ 
+	.navbar-inverse .navbar-nav>li>a{font-size: 14px;} /*상위 메뉴의 Font 크기 */
+
+	/*footer css 푸터*/
+	.footer_info{color: #eee; line-height: 20px; text-align: center;font-size: 13px; padding: 2px 0px 15px;}
+	.footer_info br{display: none;}
+	.footer_info span{color:#eee;display: block;}
+	.footer_box{float: initial; margin: 0px;}
+	.footer_logo{text-align: center;margin: 10px;}
+}
+
+/*
+ * log-in screen css
+*/
+.loginbg1 {
+	padding: 120px 0px 200px 0px;
+}
+.loginbg2 {
+	width:600px;
+	height: 150px; 
+	margin:0 auto;
+	border-radius: 25px;
+	border: 3px solid #233449;
+	padding: 5px; 
+}
+.login-table {
+	border-collapse: collapse;
+	width: 584px;
+	height: 134px;
+	background:#233449;
+	border-radius: 20px;
+}
+.login-td {
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 0px solid white;
+	font-size: 20px;
+}
+.login-text-box {
+	padding-left: 5px;
+	height: 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	font-size: 14px;
+}
+.login-button {
+	background-color: #233449;
+	border-radius: 5px;
+	border: 1px solid #F7F9FA;
+	color: white;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 20px;
+	cursor: pointer;
+}
+.pwd-button {
+	background-color: #233449;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	cursor: pointer;
+}

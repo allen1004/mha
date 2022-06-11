@@ -1,0 +1,33 @@
+/*index contents*/
+.contents{margin: 50px auto;} 
+#myCarousel{cursor: pointer;}
+
+/*메인 공지, 연락처 박스*/
+.box1, .box2, .box3{height: 150px; background: #095f86;border-radius: 7px;overflow: hidden; padding: 10px; width: 363px; margin-right: 20px; float: left;} 
+.box2{background: #4c4c4c;} 
+.box3{margin-right: 0px;} 
+
+/*메인 공지사항 박스*/
+.box1 span{font-weight: bold;font-size: 16px;display: block; padding: 10px 0px;} 
+.box1 div.panel{margin: 0 auto;width: 90%;border: none; margin-bottom: 0px;} 
+.box1 div .panel-body{line-height: 16px;cursor: pointer;} 
+
+/*메인 아이콘버튼 박스*/
+.box2 div{width: 90%; margin: 0 auto 5px; background: #fff; padding: 10px; border-radius: 5px; border: 1px solid #eee; font-size: 16px;text-align: center; font-weight: bold; cursor: pointer;} 
+.box2 div:hover, .box2 div:hover i{background: #dedede; color:#003248} 
+.box2 fa{text-align: left;} .box3{background: #e0493d; padding: 10px 25px;} 
+
+/*메인 연락처 박스*/
+.box3 .contactus2 div{ background: #e0493d; padding: 5px; border-radius: 5px; border: 1px solid #eee; font-size: 14px;text-align: center; font-weight: bold;margin-bottom: 12px;box-sizing: border-box; color: #ddd; cursor: pointer;} 
+.box3 .contactus2 div i.fa{color:#eee; } 
+.box3 .contactus2 div:last-child { background: #095f86;} 
+.box3 div.panel .panel-body{padding: 15px 15px 0px;} 
+.box3 div.panel .panel-body span{line-height: 16px;} 
+.box3 .contactus1{float:left;} 
+.box3 .contactus2{float:right;} 
+		
+/*미디어쿼리 시작 @media (max-width: 600px) { */
+@media all and (min-width: 320px) and (max-width:770px) {
+	.box1, .box2, .box3{float: initial; height: initial; width:100%; margin-bottom: 20px;} 
+	.box3 .panel{margin-bottom: 0px;} 
+}
